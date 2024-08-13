@@ -1,0 +1,139 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: url(./samurai-sci-fi-city-moon-digital-art-4k-wallpaper-uhdpaper.com-239@0@k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 858px;
+}
+.navi{
+    display: flex;
+    height: 5vh;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    background-color: transparent;
+}
+.rock{
+    width: 10vh;
+    font-size: 1.3rem;
+    height: 2vw;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.rock:hover{
+    background: linear-gradient(to top left,rgb(25, 3, 45),rgb(62, 0, 120));
+}
+.rock2{
+    margin-left: 0.5rem;
+}
+/* .rock:hover{
+    
+} */
+a{
+    text-decoration: none;
+    color: rgb(134, 28, 234);
+    font-size: 2.6vh;
+
+}
+.icon{
+    position: relative;
+    width: .5vh;
+    height: .5vw;
+    z-index: 1;
+
+}
+.img-icon{
+    width: 7vh;
+    height: 3.5vw;
+    z-index: 2;
+    overflow: hidden;
+    filter: drop-shadow(10px 7px 10px rgb(60, 1, 83));
+
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    margin-top: 15vh;
+    position: relative;
+    left: -80rem;
+    transition:2s ;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    position: relative;
+    top: -150rem;
+    transition: 1s;
+}
+svg{
+    margin-left: 10rem;
+    margin-top: 3rem;
+
+}
+.wrap{
+    display: flex;
+    backdrop-filter: blur(10px);
+    height: 65vh;
+    width: 25vw;
+    background-color: transparent;
+    border: 1px solid rgb(103, 102, 103);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 0% 100% 0% 100% / 79% 21% 79% 21%   ;
+    box-shadow: 13px 9px 10px rgb(60, 1, 83);
+   
+
+}
+.wrap h1{
+    font-size: 2.5rem;
+    align-items: center;
+}
+
+.text,.pass,.gmail{
+    font-size: 1.2rem;
+    height: 4vh;
+    width: 20vw;
+    border: auto solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: 5vh;
+}
+::placeholder{
+    color: black;
+}
+.btn,.btn1{
+    height: 5vh;
+    width: 8vw;
+    background: linear-gradient(to left top,rgb(92, 0, 142) ,rgb(29, 0, 53)
+    );
+    color: white;
+    font-size: 1.3rem;
+}
+.btn:hover{
+    background: linear-gradient( to right bottom,rgb(92, 0, 142) ,rgb(29, 0, 53));
+    border-radius:10% 90% 13% 87% / 88% 12% 88% 12%   ;
+}
+.btn1:hover{
+    border-radius:82% 18% 89% 11% / 5% 95% 5% 95%  ;
+    background: linear-gradient( to right bottom,rgb(92, 0, 142) ,rgb(29, 0, 53));
+
+}
+/* {
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: transparent;
+
+} */
+
