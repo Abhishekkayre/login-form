@@ -1,6 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icewatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/workspace/styles.css" />
+    <link rel="icon" href="/workspace/assets/snowflake.svg" />
+</head>
+<body>
+    <canvas id="snow-canvas" aria-hidden="true"></canvas>
+    <header class="nav">
+        <div class="nav__left">
+            <img class="nav__logo" src="/workspace/assets/icewatch-logo.svg" alt="Icewatch" />
+            <nav class="nav__links" aria-label="Primary">
+                <a href="#" class="active">Home</a>
+                <a href="#">Series</a>
+                <a href="#">Films</a>
+                <a href="#">New & Popular</a>
+                <a href="#">My List</a>
+            </nav>
+        </div>
+        <div class="nav__right">
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                <img src="/workspace/assets/icons/search-snow.svg" alt="Search" />
+            </button>
+            <button class="icon-btn" id="notificationsBtn" aria-label="Notifications">
+                <img src="/workspace/assets/icons/bell-snow.svg" alt="Notifications" />
+            </button>
+            <div class="profile">
+                <img class="avatar" src="/workspace/assets/avatars/snow-avatar.svg" alt="Profile" />
+                <span class="caret">▾</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu" hidden>
+            <a href="#" class="active">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Films</a>
+            <a href="#">New & Popular</a>
+            <a href="#">My List</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <img class="hero__brand" src="/workspace/assets/hero/ice-originals.svg" alt="Icewatch Originals" />
+                <h1 class="hero__title">Frostbound</h1>
+                <p class="hero__desc">In an endless winter, a small crew ventures beyond the white to uncover a signal that shouldn't exist.</p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary" id="playHero">
+                        <img src="/workspace/assets/icons/play-snow.svg" alt="" />
+                        Play
+                    </button>
+                    <button class="btn btn--ghost" id="moreInfoHero">
+                        <img src="/workspace/assets/icons/info-snow.svg" alt="" />
+                        More Info
+                    </button>
+                </div>
+            </div>
+            <div class="hero__gradient"></div>
+        </section>
+
+        <section class="row" data-row="Trending Now">
+            <h2 class="row__title">Trending Now</h2>
+            <div class="row__scroller" data-key="trending"></div>
+        </section>
+
+        <section class="row" data-row="Top Picks for You">
+            <h2 class="row__title">Top Picks for You</h2>
+            <div class="row__scroller" data-key="topPicks"></div>
+        </section>
+
+        <section class="row" data-row="Icewatch Originals">
+            <h2 class="row__title">Icewatch Originals</h2>
+            <div class="row__scroller row__scroller--lg" data-key="originals"></div>
+        </section>
+
+        <section class="row" data-row="Because you watched 'Glacier Run'">
+            <h2 class="row__title">Because you watched 'Glacier Run'</h2>
+            <div class="row__scroller" data-key="because"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__icons">
+            <a href="#" aria-label="Facebook"><img src="/workspace/assets/icons/facebook-snow.svg" alt="Facebook" /></a>
+            <a href="#" aria-label="Instagram"><img src="/workspace/assets/icons/instagram-snow.svg" alt="Instagram" /></a>
+            <a href="#" aria-label="Twitter"><img src="/workspace/assets/icons/twitter-snow.svg" alt="Twitter" /></a>
+            <a href="#" aria-label="YouTube"><img src="/workspace/assets/icons/youtube-snow.svg" alt="YouTube" /></a>
+        </div>
+        <ul class="footer__links">
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="footer__copy">© 2025 Icewatch</div>
+    </footer>
+
+    <script type="module" src="/workspace/app.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
